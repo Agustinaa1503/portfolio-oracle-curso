@@ -1,0 +1,323 @@
+:root {
+  --color-de-fondo: #f5f5f5;
+  --color-de-fondo-menu: #ffffff;
+  --color-de-link: #3498db; 
+  --color-principal: #3498db;
+  --color-texto: #333333;
+  --color-titulo: #2c3e50;
+  --color-footer: #2c3e50;
+  --color-footer-texto: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-de-fondo);
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--color-de-fondo-menu);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.cabecera__logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navegacion__lista {
+  display: flex; 
+  gap: 2rem; 
+}
+
+.navegacion__elemento a {
+  font-size: 1rem; 
+  padding: 0.5rem 1rem; 
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.navegacion__elemento a:hover {
+  background-color: rgba(
+    52,
+    152,
+    219,
+    0.1
+  ); 
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--color-principal);
+  color: white;
+  width: 100%; 
+  max-width: 1200px;
+  border-radius: 10px; 
+  margin-bottom: 2rem; 
+}
+
+.presentacion h1 {
+  font-size: 2.5rem; 
+  margin: 0;
+}
+
+.presentacion p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.sobre-mi__titulo {
+  font-size: 2rem; 
+  color: var(--color-titulo);
+  margin-bottom: 1rem;
+}
+
+.sobre-mi__texto {
+  font-size: 1rem;
+  color: var(--color-texto);
+  margin-bottom: 1rem;
+}
+
+.sobre-mi__firma {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* ------------------------------ Sección Skills ------------------------------ */
+
+.skills {
+    padding: 2rem 1rem;
+    background-color: var(--color-de-fondo);
+    max-width: 1200px; 
+    border-radius: 10px; 
+}
+
+.skills__titulo {
+    font-size: 2rem; 
+    color: var(--color-titulo);
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.skills__lista {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills__elemento {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 1.5rem; 
+    text-align: center;
+    width: 120px; 
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+}
+
+.skills__elemento:hover {
+    transform: translateY(-5px); 
+}
+
+.skills__elemento i {
+    font-size: 2rem; 
+    margin-bottom: 0.5rem;
+    color: var(--color-icono, #333); 
+}
+
+.skills__elemento p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+  
+
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+  padding: 2rem 1rem;
+  background-color: var(--color-de-fondo);
+  max-width: 1200px; 
+  border-radius: 10px; 
+}
+
+.habilidades__titulo {
+  font-size: 2rem; 
+  color: var(--color-titulo);
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+
+.habilidades__lista {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.habilidades__elemento {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 1.5rem;
+  text-align: center;
+  width: 120px; 
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; 
+}
+
+.habilidades__elemento:hover {
+  transform: translateY(-5px);
+}
+
+.habilidades__elemento p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/*------------------------------ Sección de Proyectos ------------------------------*/
+.proyectos {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+}
+
+.proyectos__titulo {
+  font-size: 2rem;
+  color: var(--color-titulo);
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+
+.proyectos__contenedor {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formacion__icono {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+/* Sección de Contacto */
+.contacto {
+  padding: 2rem 1rem;
+  max-width: 600px; 
+  background-color: var(--color-de-fondo-menu);
+  border-radius: 10px; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; 
+}
+
+.contacto__titulo {
+  font-size: 2rem; 
+  color: var(--color-titulo);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto__grupo {
+  margin-bottom: 1rem; 
+}
+
+.contacto__label {
+  margin-bottom: 0.5rem; 
+}
+
+.contacto__input,
+.contacto__textarea {
+  padding: 0.75rem; 
+  border: 1px solid #dddddd;
+  border-radius: 5px; 
+  font-size: 1rem;
+  width: 100%; 
+  transition: border-color 0.3s; 
+}
+
+.contacto__input:focus,
+.contacto__textarea:focus {
+  border-color: var(--color-principal); 
+}
+
+.contacto__boton {
+  padding: 0.75rem;
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.contacto__boton:hover {
+  background-color: #2980b9; 
+}
+
+.contacto__info {
+  margin-top: 1rem;
+  text-align: center; 
+}
+
+/* ------------------------------ Sección Footer -------------------------------*/
+.footer {
+  padding: 1rem;
+  background-color: var(--color-footer);
+  color: var(--color-footer-texto);
+  text-align: center;
+  width: 100%; 
+}
+
+.footer a {
+  color: var(--color-footer-texto);
+  margin: 0 0.5rem; 
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
